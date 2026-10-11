@@ -1,5 +1,7 @@
 # Tradewinds test patches
 
+**Latest diagnostic: [v14](Tradewinds_StartupDiagnostic_TEST_v14.zip).** V13 reached all constructor entry points but did not identify the failing caller. V14 corrects access-violation parameter logging and adds thread IDs, mapped DLL names and a longer bounded stack trace. All gameplay/data remain unchanged. This is a diagnostic build, not a confirmed fix. Replace both patch files and send the v14 startup log. 94 regressions and eight diagnostic checks passed.
+
 **Current crash investigation: [v13 diagnostic](Tradewinds_StartupDiagnostic_TEST_v13.zip).** The v12 report confirms UI loading completed before an access violation in a Windows library. V13 adds building-constructor markers and the exception register/stack details needed to identify the caller. Gameplay/data remain unchanged. Replace both files, run, and send the new `Tradewinds-startup.log` (first line must say v13). This is not a confirmed Windows crash fix. 94 regressions and eight diagnostic checks passed; all 11 building constructor markers were also exercised by real Wine/QEMU startup.
 
 **Building-loading crash investigation: [v12 diagnostic](Tradewinds_StartupDiagnostic_TEST_v12.zip).** It keeps v11 resources/gameplay and adds a local `Tradewinds-startup.log`. Replace both files, run the game, and send that log if it closes. This is not a confirmed Windows crash fix. All 94 regressions and five logging checks passed; real building/port UI loading also completed under Wine/QEMU. That runner later encountered a graphics-mode failure.

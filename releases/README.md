@@ -1,5 +1,7 @@
 # Tradewinds test patches
 
+**Building-loading crash investigation: [v12 diagnostic](Tradewinds_StartupDiagnostic_TEST_v12.zip).** It keeps v11 resources/gameplay and adds a local `Tradewinds-startup.log`. Replace both files, run the game, and send that log if it closes. This is not a confirmed Windows crash fix. All 94 regressions and five logging checks passed; real building/port UI loading also completed under Wine/QEMU. That runner later encountered a graphics-mode failure.
+
 **Use [Fair Wind v11](Tradewinds_FairWind_TEST_v11.zip).** It corrects the XML declarations that produced multiple startup alerts such as `assets/xml/ships.txt: quoted string expecting ..., line 0`. All four affected XML files are corrected. V10's Windows executable-layout fix and all prior ship/economic features are retained.
 
 Close the game, back up saves, and replace BOTH the executable and TW1_00.data in the original game folder alongside its DLLs and TW1_01.data. The EXE matches v10 exactly; only the four serializer headers were removed from the data archive.

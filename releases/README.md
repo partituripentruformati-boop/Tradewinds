@@ -1,5 +1,11 @@
 # Tradewinds test patches
 
+Use [Fair Wind v9](Tradewinds_FairWind_TEST_v9.zip) for Douglas McGowan's blue-and-gold ship artwork, 250 cargo / 25-cannon maximum and 60 maximum hull. Combat frames are 95×72, between the ordinary one-master (87×72) and two-master (103×72). It includes all regional goods and previous patch features.
+
+Back up saves, then install BOTH the executable and TW1_00.data in the original game folder. V9 saves require matching v9 data. Existing Fair Wind ships upgrade once and preserve damage proportion; ordinary sloops stay unchanged.
+
+V9 passed 94 prior regression checks, 16 regional integration tests, eight Fair Wind tests and nine x86 core tests. Windows gameplay/rendering still needs in-game verification.
+
 Use [Regional Goods v8](Tradewinds_RegionalGoods_TEST_v8.zip) to add Tea (Tanchon only), Spices (Lama Sut only), and Jade & Gemstones (Edamame only), with fluctuating prices and sales in every port. The new rows use the supplied designs and include quantity entry, Buy/Sell and Max buttons, plus warehouse Load all / Store all controls. All previous v7 shipyard, Black Dragon, cannon and warehouse changes are included.
 
 Close the game and back up every save first. Install BOTH the executable and TW1_00.data from v8 in the original game folder, alongside its DLLs and TW1_01.data. Keep matching patch files together. To roll back, restore earlier patch files and a pre-v8 save: older executables cannot preserve the three added inventories when saving.

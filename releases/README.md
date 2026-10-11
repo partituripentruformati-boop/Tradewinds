@@ -1,5 +1,7 @@
 # Tradewinds test patches
 
+**Latest: [v19 — clean marketplaces in all ports](Tradewinds_CleanMarkets_TEST_v19.zip).** Removes the upper Tea shortcut row, shortens the panel and retains a 20-pixel gap to Buy/Sell/Leave. Tea trades through the lower window and still buys only in Tanchon. Shared UI applies everywhere. Only the UI resource changes; EXE is identical to v18 and logs still say v18. Replace both files. 94 regressions and five lower Tea tests passed; Windows rendering pending.
+
 **Latest: [v18 — Tea in the lower Buy/Sell window](Tradewinds_TeaTrade_TEST_v18.zip).** Tea has a lower quantity row with minus/plus/Max, participates in main Buy/Sell and Sell All, and remains second in both lists. Includes v17 spacing and all ship upgrades. No new command registrations. Replace BOTH files; back up saves. 94 regressions, 18 Tea integration tests, eight Fair Wind, eight diagnostic checks and five lower-trade tests passed. Windows playtest pending.
 
 **Latest layout: [v17 — Tea market layout](Tradewinds_TeaLayout_TEST_v17.zip).** Tea sits between General Merchandise and Arms. Item rows evenly spaced; Tea controls have their own wider row below Dream Dust; Buy/Sell/Leave and native trade window move lower. Tea still buys only in Tanchon. Only one UI resource changes; EXE is identical to v16 and logs still say v16. Replace both files. 94 regressions and Tea command-binding check passed; Windows rendering pending.

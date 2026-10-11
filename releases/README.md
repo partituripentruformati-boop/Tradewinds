@@ -1,5 +1,13 @@
 # Tradewinds test patches
 
+**Use [Fair Wind v11](Tradewinds_FairWind_TEST_v11.zip).** It corrects the XML declarations that produced multiple startup alerts such as `assets/xml/ships.txt: quoted string expecting ..., line 0`. All four affected XML files are corrected. V10's Windows executable-layout fix and all prior ship/economic features are retained.
+
+Close the game, back up saves, and replace BOTH the executable and TW1_00.data in the original game folder alongside its DLLs and TW1_01.data. The EXE matches v10 exactly; only the four serializer headers were removed from the data archive.
+
+Five XML-format regression checks and 94 existing gameplay/artwork/layout checks passed. Native engine services are stubbed; full Windows startup/rendering requires in-game testing. V8, v8.1, v9 and v10 are superseded.
+
+## Superseded packages
+
 **V8 and v9 contain an executable-layout defect that can cause Windows to show "This app can’t run on your PC". Use the corrected packages below.**
 
 Use [Fair Wind v10](Tradewinds_FairWind_TEST_v10.zip) for the latest changes, including Fair Wind art, 250 cargo / 25 cannons / 60 maximum hull and all regional economic features. For just the v8 feature set, use [Regional Goods v8.1](Tradewinds_RegionalGoods_TEST_v8_1.zip).

@@ -1,5 +1,15 @@
 # Tradewinds test patches
 
+**V8 and v9 contain an executable-layout defect that can cause Windows to show "This app can’t run on your PC". Use the corrected packages below.**
+
+Use [Fair Wind v10](Tradewinds_FairWind_TEST_v10.zip) for the latest changes, including Fair Wind art, 250 cargo / 25 cannons / 60 maximum hull and all regional economic features. For just the v8 feature set, use [Regional Goods v8.1](Tradewinds_RegionalGoods_TEST_v8_1.zip).
+
+These packages correct the virtual-section gap in the EXE without changing game code or data. Layout regression checks reproduce the old defect and validate the repaired image. V10 also passes 94 gameplay regression checks, 16 regional tests and eight Fair Wind tests. Actual Windows launch/gameplay still requires testing.
+
+Close the game, back up saves, and copy BOTH EXE and TW1_00.data into the original game folder alongside its DLLs and TW1_01.data. Keep matching versions together.
+
+## Superseded packages
+
 Use [Fair Wind v9](Tradewinds_FairWind_TEST_v9.zip) for Douglas McGowan's blue-and-gold ship artwork, 250 cargo / 25-cannon maximum and 60 maximum hull. Combat frames are 95×72, between the ordinary one-master (87×72) and two-master (103×72). It includes all regional goods and previous patch features.
 
 Back up saves, then install BOTH the executable and TW1_00.data in the original game folder. V9 saves require matching v9 data. Existing Fair Wind ships upgrade once and preserve damage proportion; ordinary sloops stay unchanged.

@@ -1,9 +1,9 @@
 # Tradewinds test patches
 
-Use [Black Dragon v5](Tradewinds_BlackDragon_TEST_v5.zip) for the dragon artwork, shipyard catalog and maximum-cannon button. Install both the executable and TW1_00.data in the original game folder.
+Use [Black Dragon v6](Tradewinds_BlackDragon_TEST_v6.zip) for the enlarged combat sprite, Black Dragon 450 cargo / 45 cannons, and Junk 50 cargo / five cannons. It includes the shipyard catalog, restocking and maximum-cannon button. Cannons still require ten free cargo units and enough gold each.
 
-**V4 has a disappearing-ship bug; use v5 instead.** V5 selects artwork only in display objects and preserves the native ship type pointer used to group the fleet. It also converts transparency masks to the original indexed PNG format.
+Install both the executable and TW1_00.data in the original game folder. Back up all saves first. Black Dragon is a manager-registered type in v6 saves; keep the matching v6 data, or restore a pre-v6 save when rolling back.
 
-V5 passed 78 x86 emulation, archive and graphics checks. These include reproducing the v4 bug in the native fleet grouping routine and confirming v5 keeps the ship after repeated display refreshes. Full Windows gameplay and rendering still need in-game testing.
+**V4 has a disappearing-ship bug; use v6 instead.** V6 preserves native fleet grouping by using the registered type returned by the game manager, and retains indexed PNG transparency masks from v5.
 
-Back up all saves before installing. If Black Dragon is absent after loading, try a save from before the v4 disappearance. No save files are modified by this package.
+V6 passed 88 x86 emulation, archive, layout and graphics checks, including native regrouping, capacity purchases and enlarged frame anchors. Full Windows gameplay and rendering still require in-game verification.

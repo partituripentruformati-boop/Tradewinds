@@ -1,5 +1,7 @@
 # Tradewinds test patches
 
+**Latest test: [v22 — Spices](Tradewinds_Spices_TEST_v22.zip).** Adds Spices buying only in Lama Sut, selling anywhere, fluctuating prices, shared market/warehouse controls, supplied icon and a global paid-round hint. Tea and all prior upgrades remain; Jade disabled. Includes the confirmed v21.1 selection fix and Tea-only save migration. Replace both files and back up saves. Regression/integration checks passed; Windows gameplay pending.
+
 **Latest repair: [v21.1 — market purchases](Tradewinds_MarketFix_TEST_v21_1.zip).** Fixes Tea refresh discarding the original four selected quantities before Buy/Sell. Skips empty Tea trades and restores original selections after mixed trades. All v21 features/data/save format retained; Spices remains paused and is excluded. Replace both files and test a small original commodity purchase. Regression reproduces failures on v21 and passes on this fix; existing checks passed. Windows trade confirmation pending.
 
 **Latest: [v21 — Tea warehouse layout, icon and alehouse tip](Tradewinds_TeaWarehouse_TEST_v21.zip).** Market note replaced with a random paid-round tip in all alehouses; Tea icon enlarged to 24px; warehouses align Tea Value/Qty and include lower quantity controls using the normal Transfer button. All previous features retained. Replace both files and back up saves. 94 regressions, 18 Tea, eight Fair Wind, eight diagnostic, five market and four warehouse checks passed; source rebuild matches exactly. Windows gameplay/rendering pending.

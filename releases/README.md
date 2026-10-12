@@ -1,5 +1,7 @@
 # Tradewinds test patches
 
+**Latest repair: [v21.1 — market purchases](Tradewinds_MarketFix_TEST_v21_1.zip).** Fixes Tea refresh discarding the original four selected quantities before Buy/Sell. Skips empty Tea trades and restores original selections after mixed trades. All v21 features/data/save format retained; Spices remains paused and is excluded. Replace both files and test a small original commodity purchase. Regression reproduces failures on v21 and passes on this fix; existing checks passed. Windows trade confirmation pending.
+
 **Latest: [v21 — Tea warehouse layout, icon and alehouse tip](Tradewinds_TeaWarehouse_TEST_v21.zip).** Market note replaced with a random paid-round tip in all alehouses; Tea icon enlarged to 24px; warehouses align Tea Value/Qty and include lower quantity controls using the normal Transfer button. All previous features retained. Replace both files and back up saves. 94 regressions, 18 Tea, eight Fair Wind, eight diagnostic, five market and four warehouse checks passed; source rebuild matches exactly. Windows gameplay/rendering pending.
 
 **Latest: [v19 — clean marketplaces in all ports](Tradewinds_CleanMarkets_TEST_v19.zip).** Removes the upper Tea shortcut row, shortens the panel and retains a 20-pixel gap to Buy/Sell/Leave. Tea trades through the lower window and still buys only in Tanchon. Shared UI applies everywhere. Only the UI resource changes; EXE is identical to v18 and logs still say v18. Replace both files. 94 regressions and five lower Tea tests passed; Windows rendering pending.

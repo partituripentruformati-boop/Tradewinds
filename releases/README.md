@@ -1,5 +1,7 @@
 # Tradewinds test patches
 
+**Latest: [v23 — Tea/Spices transaction log](Tradewinds_TradeLog_TEST_v23.zip).** Adds Bought/Sold entries with actual quantity and gold total for both regional goods, including Sell All and fleet/warehouse trades. All v22.1 features retained; data and save format unchanged. Replace both files. Five log checks, five cash checks, nine Spices checks, four selection checks, eight diagnostic checks and 94 regressions passed. Windows gameplay confirmation pending.
+
 **Latest fix: [v22.1 — Tea/Spices cash display](Tradewinds_CashFix_TEST_v22_1.zip).** Corrects stale visible cash after regional buying/selling. The wallet was already charged/credited; the zero-spend call skipped UI refresh. Updates both cash fields directly without additional charges. All v22 features and data retained. Replace both files and test a small purchase/sale. Five cash checks (four fail on v22), 94 regressions, nine Spices, four selection and eight diagnostic checks passed. Windows display confirmation pending.
 
 **Latest test: [v22 — Spices](Tradewinds_Spices_TEST_v22.zip).** Adds Spices buying only in Lama Sut, selling anywhere, fluctuating prices, shared market/warehouse controls, supplied icon and a global paid-round hint. Tea and all prior upgrades remain; Jade disabled. Includes the confirmed v21.1 selection fix and Tea-only save migration. Replace both files and back up saves. Regression/integration checks passed; Windows gameplay pending.
